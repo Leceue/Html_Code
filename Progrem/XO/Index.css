@@ -1,0 +1,19 @@
+button {
+    position: absolute;
+    left: 50%;
+    margin-left: -65px;
+    top: 50px;
+}
+
+td {
+    border: 2px solid rgb(20, 16, 16);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Verdana;
+    font-style: italic;
+    font-size: 70px;
+    cursor: pointer;
+}
+
