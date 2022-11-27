@@ -3,6 +3,7 @@ button {
     left: 50%;
     margin-left: -65px;
     top: 50px;
+    border: 1px solid red;
 }
 
 td {
@@ -17,3 +18,24 @@ td {
     cursor: pointer;
 }
 
+table {
+    position: absolute;
+    left: 40%;
+    top: 100px;
+    border-collapse: collapse;
+}
+
+/* .EndGame {
+    display: none;
+    width: 200px;
+    height: 120px;
+    background-color: brown;
+    position: absolute;
+    left: 40%;
+    top: 180px;
+    margin-left: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+} */
