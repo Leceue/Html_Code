@@ -25,17 +25,18 @@ table {
     border-collapse: collapse;
 }
 
-/* .EndGame {
+#EndGame {
     display: none;
     width: 200px;
     height: 120px;
-    background-color: brown;
+    background-color: blue;
     position: absolute;
     left: 40%;
     top: 180px;
     margin-left: 50px;
     text-align: center;
+    vertical-align: middle;
     border-radius: 5px;
     color: white;
     font-size: 30px;
-} */
+}

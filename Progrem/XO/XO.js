@@ -15,6 +15,7 @@ var WinBom = [
 ];
 
 function ReMake() {
+    document.getElementById("EndGame").style.display = "none";
     for(let i=0;i<cells.length;i++) {
         cells[i].innerHTML= "";
         flag = 0;
@@ -34,7 +35,7 @@ function turnClick(cellTarget) {
     document.getElementById(id).innerHTML = Sign[flag];
     flag ^= 1;
     let CheckId = CheckWin();
-    if(CheckId != -1) setTimeout(GameOver(CheckId),500);
+    if(CheckId != -1) GameOver(CheckId);
     return ;
 }
 
@@ -59,5 +60,6 @@ function GameOver(WinId){
         还能让你有个心里安慰，但这种话说出来骗骗兄弟就差不多得了，哥们信你一下也不会少块肉，但是你别搞得自己也当真了就行。\n
         哥们被你骗一下是真无所谓的，兄弟笑笑也就过去了。\n
         真不是哥们想要破你防，你擦擦眼泪好好想想，除了兄弟谁还会信你这些话？`);
-    document.querySelector('.EndGame').innerHTML = Winer[WinId];
+    document.getElementById("EndGame").style.display = "inline";
+    document.getElementById("EndGame").innerHTML = Winer[WinId];
 }
